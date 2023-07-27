@@ -23,9 +23,9 @@ class TestLetter:
     def test_get_transcription(self, letter_xml):
         letter = Letter(letter_xml)  # ARRANGE
         transcription = letter.get_transcription()  # noqa: F841 # ACT
-        # comment!
         # Exercise 1 - fill in ASSERTION
-        assert False
+        quote = "Many thanks indeed for your letter. It was most kind and I am immensely gratified."
+        assert quote in transcription
 
 
 class TestDigitalLibraryPage:
